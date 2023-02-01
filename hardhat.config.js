@@ -7,7 +7,6 @@ module.exports = {
 	networks: {
 		mumbai: {
 			url: process.env.ALCHEMY_RPC_URL,
-			accounts: [process.env.PRIVATE_KEY],
 		},
 	},
 	etherscan: {

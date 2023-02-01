@@ -1,10 +1,10 @@
 const hre = require("hardhat");
 
 const main = async () => {
-	// Change your contract name instead of 'Hello' here
 	const contractFactory = await hre.ethers.getContractFactory("Hello");
 
-	const contract = await contractFactory.deploy();
+	const contract = await contractFactory.deploy("Helu Shipper!", "Shipends");
+
 	await contract.deployed();
 
 	console.log(`Contract deployed at address -- ${contract.address}`);
